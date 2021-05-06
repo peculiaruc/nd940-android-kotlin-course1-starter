@@ -9,5 +9,32 @@
         android:id="@+id/logInFragment"
         android:name="com.udacity.shoestore.ui.LogInFragment"
         android:label="fragment_log_in"
-        tools:layout="@layout/fragment_log_in" />
+        tools:layout="@layout/fragment_log_in" >
+        <action
+            android:id="@+id/action_logInFragment_to_welcomeScreenFragment"
+            app:destination="@id/welcomeScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeScreenFragment"
+        android:name="com.udacity.shoestore.ui.WelcomeScreenFragment"
+        android:label="fragment_welcome_screen"
+        tools:layout="@layout/fragment_welcome_screen" >
+        <action
+            android:id="@+id/action_welcomeScreenFragment_to_instructionScreenFragment"
+            app:destination="@id/instructionScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/instructionScreenFragment"
+        android:name="com.udacity.shoestore.ui.InstructionScreenFragment"
+        android:label="fragment_instruction_screen"
+        tools:layout="@layout/fragment_instruction_screen" >
+        <action
+            android:id="@+id/action_instructionScreenFragment_to_listShoeScreenFragment"
+            app:destination="@id/listShoeScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listShoeScreenFragment"
+        android:name="com.udacity.shoestore.ui.ListShoeScreenFragment"
+        android:label="fragment_list_shoe_screen"
+        tools:layout="@layout/fragment_list_shoe_screen" />
 </navigation>

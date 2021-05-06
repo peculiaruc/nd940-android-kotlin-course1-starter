@@ -25,7 +25,8 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/TextInput_EditText_email"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -38,15 +39,16 @@
         android:layout_marginEnd="@dimen/standard_margin"
         android:hint="@string/password"
         android:textColorHint="#000000"
+        app:passwordToggleEnabled="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout_email"
-        app:passwordToggleEnabled="true">
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout_email">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-             />
+             android:inputType="numberPassword"
+            />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
